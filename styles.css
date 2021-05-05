@@ -1,0 +1,55 @@
+body {
+    margin: 10px;
+    background: url('https://sgl-assets.imgix.net/files/paragraph_photo/j-paul-getty-museum-best-museums-los-angeles-via-magazine-shutterstock_336745538.jpg?w=934&h=620&fit=max');
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background-color: rgb(198, 202, 174, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid 10px rgb(83, 47, 23);
+}
+
+h1 {
+font-size: 60px;
+font-weight: bold;
+font-family: 'Cinzel Decorative', cursive;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    border: solid 10px rgb(83, 47, 23);
+    background-color: rgb(198, 202, 174, 0.8);
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 150px;
+    font-weight: bold;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    width: 280px;
+    padding: 10px;
+    object-fit: cover;
+    margin-top: 30px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+p {
+position: absolute;
+font-size: 19px;
+}
+
+

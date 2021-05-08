@@ -29,11 +29,16 @@ function displayResults(json) {
      }
 
     let printArt = document.createElement('p');
-    printArt.innerText = `There are ${json.objectIDs.length} pieces of art in our collection related to your keyword. Here's a little peek at five them. Visit the museum to see more!`; 
+    printArt.innerText = `There are ${json.objectIDs.length} pieces of art in our collection related to '${searchQuery.value}'. Here's a preview of five of them. Visit the museum to see more!`; 
     artDisplay.appendChild(printArt)
 
+
+    // let sampleArr = json.objectIDs  
+    // let sample = sampleArr(Math.floor(Math.random()*sampleArr.length))
+
     if(json.objectIDs.length === 0) {
-        console.log("Interesting, there are no results for that keyword. Try another!");
+        // console.log(`There are no results for '${searchQuery.value}'. Try another!`);
+        // document.querySelector('artDisplay').innerText = `There are no results for '${searchQuery.value}'. Try another!`
       } else {
         for(let i = 0; i <= 4; i++) {
             console.log(json.objectIDs[i])
@@ -54,53 +59,6 @@ function viewImages(json) {
     img.src =  json.primaryImage;
    viewArt.appendChild(img);
 }
-
-// hoverImage.addEventListener("mouseover", event => {
-// fetch(`${objectURL}/${json.objectIDs[i]}`)
-// .then(function (result) {
-// return result.json();
-// })
-
-// .then(function(json) {
-//     console.log(json.title)
-//     // flashTitle(json)
-// })
-
-// function flashTitle(json) {
-//     let showTitle = document.createElement('p');
-//     showTitle.innerText = `"${json.title}"`;
-//     hoverTitle.appendChild(showTitle);
-// }
-
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//pass displayResults into a new function to show the image associated with the first 5 IDs from the loop...call back ? 
-
-
-//     let showArt = document.createElement('li')
-//     showArt.src = (json.primaryImage)  //THIS?????
-// }
-
-//a function that displays the IMAGES of the first ten IDs related to the keyword
-
-// function showArt(json) {
-//fetch(``) 
-//.then(function (result){
-//    return result.json();
-
-
-// // }

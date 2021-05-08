@@ -14,15 +14,45 @@ body {
     border: solid 10px rgb(83, 47, 23);
 }
 
+a { 
+    color: black;
+}
+
+a:hover {
+    color:rgb(102, 110, 57);
+    font-weight: bolder;
+}
+
 h1 {
 font-size: 60px;
 font-weight: bold;
 font-family: 'Cinzel Decorative', cursive;
 }
 
+h6 {
+font-size: 18px;
+font-style: italic;
+}
+
 .searchForm {
     display: flex;
     justify-content: center;
+}
+
+.form-control { 
+    padding: 6px;
+    border: solid 1px black;
+    font-style: italic;
+}
+
+button { 
+    font-style: italic;
+}
+
+.btn-outline-secondary:hover {
+    background-color:rgb(102, 110, 57);
+    color: black;
+    border: solid 1px black;
 }
 
 .display {
